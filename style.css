@@ -1,0 +1,240 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global */
+
+a {
+    text-decoration: none;
+    color: #757575;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: #303030;
+}
+
+/* Form */
+
+.subscribe {
+    padding: 10px;
+}
+
+.emailField {
+    padding: 15px;
+    width: 30%;
+}
+
+.getStarted {
+    padding: 15px;
+    background-color: #e50914;
+    border: none;
+}
+
+/* End */
+
+/* Image Wrapper  */
+
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    filter: brightness(35%);
+}
+
+/* End */
+
+/*Section Class: Top */
+
+.top {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.svg-icon-netflix-logo {
+    margin: .8rem;
+    height: 73px;
+    width: 145px;
+    fill: #e50914;
+}
+
+.redButton {
+    padding: 7px 17px;
+    margin: .8rem;
+    background-color: #e50914;
+    color: white;
+    border-radius: 5px;
+    align-self: center; 
+}
+
+
+/* End */
+
+/* Header Text  */
+
+.header-text {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(70%);
+    text-align: center;
+}
+
+.title__header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.125rem;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.subtitle__header {
+    font-size: 1.625rem;
+    font-weight: 100;
+}
+
+.toWatch-text {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 200;
+    padding: 0.5rem;
+}
+
+/* End */
+
+/* Section: tv, mobile, device-pile  */
+
+.tv {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #000;
+    margin-bottom: 5px;
+    max-width: 100%;
+}
+
+.tv img {
+    max-width: 100%;
+    order: 2;
+}
+
+.tv .big-text {
+    order: 1;
+}
+
+.mobile {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #000;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.mobile img {
+    max-width: 100%;
+    order: 1;
+}
+
+.mobile .big-text {
+    order: 2;
+}
+
+.device-pile {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 100%;
+    margin-bottom: 5px;    
+}
+
+.device-pile img {
+    max-width: 100%;
+    order: 2;
+}
+
+.device-pile .big-text {
+    order: 1;
+}
+
+/* End */ 
+
+/* Section: tv, mobile, device-pile | big-text  */
+
+.big-text {
+    margin: auto;
+    max-width: 50%;
+    color: #fff;
+}
+
+/* End  */
+
+/* Section class: button  */
+
+.title {
+    color: #fff;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.button {
+    background-color: #000;
+    margin-bottom: 5px;
+    padding: 15px;
+    max-width: 100%;
+    text-align: -webkit-center;
+}
+
+
+.faq-list {
+    background-color: #303030;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    display: block;
+    padding: .8em 2.2em .8em 1.2em;
+    margin-bottom: 0.2rem;
+    border: none;
+    width: 50%;
+    cursor: pointer;
+}
+
+/* End */
+
+/* Section class: footer  */
+
+.whole-footer {
+    background-color: #000;
+    padding: 2rem;
+}
+
+.footer-link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
+}
+
+.footer-links {
+    list-style-type: none;
+}
+
+/* Netflix Nigeria */
+
+.nfNG {
+    color: #757575;
+}
+
