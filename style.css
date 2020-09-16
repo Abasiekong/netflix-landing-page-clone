@@ -213,7 +213,7 @@ body {
 .title {
     color: #fff;
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
@@ -231,7 +231,7 @@ body {
 }
 
 
-.faq-list {
+.faq-list-text {
     background-color: #303030;
     color: #fff;
     font-size: 1.5rem;
@@ -242,6 +242,13 @@ body {
     border: none;
     width: 50%;
     cursor: pointer;
+}
+
+.svg-icon-thin-x {
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+    transform: translateY();
 }
 
 /* End */
