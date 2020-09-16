@@ -65,7 +65,12 @@
 
     <section class="tv">
 
-        <img src="img/tv.png" class="section-image">
+        <span class="story-card">
+            <img src="img/tv.png" class="section-image">
+            <video class="story-card-video" autoplay loop>
+                <source src="video-tv.m4v">
+            </video>
+        </span>
 
         <div class="big-text">
             <h1>Enjoy on your TV.</h1>
@@ -109,7 +114,7 @@
                     </path>
                 </svg>
             </button>
-            <button class="faq-svg-text"">
+            <button class="faq-svg-text">
                 <p class="faq-list-text">How much does Netflix cost?</p>
                 <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x" focusable="true">
                     <path
@@ -117,7 +122,7 @@
                     </path>
                 </svg>
             </button>
-            <button>
+            <button class="faq-svg-text">
                 <p class="faq-list-text">Where can I watch?</p>
                 <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x" focusable="true">
                     <path
@@ -141,15 +146,9 @@
                     </path>
                 </svg>
             </button>
-            <button class="faq-svg-text">
-                <p class="faq-list-text">Is Netflix Good for kids?</p>
-                <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x" focusable="true">
-                    <path
-                        d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
-                    </path>
-                </svg>
-            </button>
         </div>
+
+        <p class="toWatch-text">Ready to watch? Enter your email to create or restart your membership.</p>
 
         <form class="subscribe-form" action="#" method="POST" class="subscribe">
 
@@ -168,7 +167,6 @@
 
         </form>
 
-        <p class="toWatch-text">Ready to watch? Enter your email to create or restart your membership.</p>
 
     </section>
 
