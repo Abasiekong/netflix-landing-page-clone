@@ -142,7 +142,6 @@ body {
 .tv {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 20px;
     background-color: #000;
     margin-bottom: 5px;
@@ -150,8 +149,10 @@ body {
 }
 
 .tv img {
+    position: relative;
     max-width: 100%;
     order: 2;
+    z-index: 2;
 }
 
 .tv .big-text {
@@ -161,7 +162,6 @@ body {
 .mobile {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 20px;
     background-color: #000;
     max-width: 100%;
@@ -181,15 +181,15 @@ body {
     background-color: #000;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 20px;
     max-width: 100%;
     margin-bottom: 5px;    
 }
 
 .device-pile img {
+    position: relative;
     max-width: 100%;
-    order: 2;
+    z-index: 2;
 }
 
 .device-pile .big-text {
@@ -198,12 +198,24 @@ body {
 
 /* Story Card */
 
-.story-card-video {
+.story-card-tv,
+.story-card-device-pile {
     position: relative;
-    max-width: 100%;
-    max-height: 100%;
-    bottom: 25%;
-    right: 50%;
+    order: 2;
+}
+
+.story-card-video-tv {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    width: 475px;
+}
+
+.story-card-video-devices {
+    position: absolute;
+    top: 10%;
+    left: 18%;
+    width: 400px;
 }
 
 /* End */
