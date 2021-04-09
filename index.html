@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Nigeria - Watch TV Shows Online, Watch Movies Online</title>
-
-    <link rel=icon href="img/nficon.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Netflix Nigeria - Watch TV Shows and Movies</title>
+    <link rel="favicon" href="./img/nficon.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <section class="main-section">
-
-        <div class="top">
-
-            <span>
+    <header>
+        <section class="logo-container container-flex">
+            <span class="nf-logo">
                 <svg viewBox="0 0 111 30" class="svg-icon svg-icon-netflix-logo" focusable="false">
                     <g id="netflix-logo">
                         <path
@@ -26,234 +23,213 @@
                 </svg>
             </span>
 
-            <a href="login.html" class="redButton">Sign in</a>
+            <a href="login.html" class="signIn-button">Sign in</a>
+        </section>
 
-        </div>
+        <section class="top">
+            <img src="img/large-hero.jpg">
+            
+            <div class="header-items">
 
+                <div class="header-text">
+                    <h1>Unlimited movies, TV shows, and more.</h1>
+                    <h2>Watch anywhere. Cancel anytime.</h2>
+                </div>
 
-        <header>
+                <form class="subscribe-form" action="POST">
+                    <p class="to-watch-text">Ready to watch? Enter your email to create or restart your membership.</p>
 
-            <div class="image-wrapper">
-                <img src="img/large-hero.jpg">
-            </div>
+                    <span class="input-button-wrapper container-flex">
+                        <input class="email-field" type="email" placeholder="Email address" name="email">
 
+                        <button class="subscribe container-flex">
 
-            <div class="header-text">
-                <h1 class="title__header">Unlimited movies, TV shows, and more.</h1>
-                <h2 class="subtitle__header">Watch anywhere. Cancel anytime.</h2>
-
-                <p class="toWatch-text">Ready to watch? Enter your email to create or restart your membership.</p>
-
-                <form class="subscribe-form" action="#" method="POST" class="subscribe">
-
-                    <input class="emailField" type="email" name="email" placeholder="Email address">
-
-                    <button class="getStarted-button">
-                        <span class="getStarted-wrapper">
-                            <p class="getStarted">GET STARTED</p>
+                            <p class="getStarted">Get Started</p>
                             <svg class="getStarted-svg" viewBox="0 0 6 12">
                                 <path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z">
                                 </path>
                             </svg>
-                        </span>
-                    </button>
 
+                        </button>
+                    </span>
                 </form>
+
             </div>
-        </header>
+
+        </section>
+    </header>
+
+    <section class="story-card">
+
+        <article class="tv container-flex">
+            <section class="story-card-heading">
+                <h2>Enjoy on your TV.</h2>
+                <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h3>
+            </section>
+
+            <section class="story-card-tv">
+                <img src="./img/tv.png">
+
+                <div class="story-card-video">
+                    <video autoplay loop>
+                        <source src="video-tv.m4v">
+                    </video>
+                </div>
+
+            </section>
+        </article>
+
+        <article class="mobile container-flex">
+            <section class="story-card-heading">
+                <h2>Download your shows to watch offline.</h2>
+                <h3>Save your favorites easily and always have something to watch.</h3>
+            </section>
+
+            <section class="story-card-mobile">
+                <img src="./img/mobile.jpg">
+            </section>
+        </article>
+
+        <article class="device-pile container-flex">
+            <section class="story-card-heading">
+                <h2>Watch Everywhere</h2>
+                <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</h3>
+            </section>
+
+            <section class="story-card-device-pile">
+                <img src="./img/device-pile.png">
+
+                <div class="story-card-video">
+                    <video autoplay loop>
+                        <source src="video-devices.m4v">
+                    </video>
+                </div>
+
+            </section>
+        </article>
+
     </section>
 
-    <section class="tv">
+    <section class="faq">
+        <section>
 
-        <span class="story-card-tv">
-            <img src="img/tv.png" class="section-image">
-            <video class="story-card-video-tv" autoplay loop>
-                <source src="video-tv.m4v">
-            </video>
-        </span>
+            <h3 class="faq-heading">Frequently Asked Questions</h3>
 
-        <div class="big-text">
-            <h1>Enjoy on your TV.</h1>
-            <h2>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h2>
-        </div>
+            <section class="faq-button-wrapper container">
 
-    </section>
+                <button class="faq-button container-flex">
+                    <p class="faq-text">What is Netflix?</p>
+                    <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x" focusable="true">
+                        <path
+                            d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
+                        </path>
+                    </svg>
+                </button>
+                
+                <button class="faq-button container-flex">
+                    <p class="faq-text">How much does Netflix cost?</p>
+                    <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x" focusable="true">
+                        <path
+                            d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
+                        </path>
+                    </svg>
+                </button>
+                
+                <button class="faq-button container-flex">
+                    <p class="faq-text">Where can I watch?</p>
+                    <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x" focusable="true">
+                        <path
+                            d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
+                        </path>
+                    </svg>
+                </button>
+                
+                <button class="faq-button container-flex">
+                    <p class="faq-text">How to cancel?</p>
+                    <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x" focusable="true">
+                        <path
+                            d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
+                        </path>
+                    </svg>
+                </button>
+                
+                <button class="faq-button container-flex">
+                    <p class="faq-text">What can I watch on Netflix?</p>
+                    <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x" focusable="true">
+                        <path
+                            d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
+                        </path>
+                    </svg>
+                </button>
 
-    <section class="mobile">
+            </section>
 
-        <img src="img/mobile.jpg" class="section-image">
+        </section>
 
-        <div class="big-text">
-            <h1>Download your shows to watch offline.</h1>
-            <h2>Save your favorites easily and always have something to watch.</h2>
-        </div>
 
-    </section>
+        <form class="subscribe-form" action="POST">
 
-    <section class="device-pile">
+            <p class="to-watch-text">Ready to watch? Enter your email to create or restart your membership.</p>
 
-        <span class="story-card-device-pile">
-            <img src="img/device-pile.png" class="section-image">
-            <video class="story-card-video-devices" autoplay loop>
-                <source src="video-devices.m4v">
-            </video>
-        </span>
-        
+            <span class="input-button-wrapper container-flex">
+                <input class="email-field" type="email" placeholder="Email address" name="email">
 
-        <div class="big-text">
-            <h1>Watch Everywhere</h1>
-            <h2>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</h2>
-        </div>
+                <button class="subscribe container-flex">
 
-    </section>
-
-    <section class="button">
-
-        <h1 class="title">Frequently Asked Questions</h1>
-
-        <div class="faq-button">
-            <button class="faq-svg-text">
-                <p class="faq-list-text">What is Netflix?</p>
-                <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x" focusable="true">
-                    <path
-                        d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
-                    </path>
-                </svg>
-            </button>
-            <button class="faq-svg-text">
-                <p class="faq-list-text">How much does Netflix cost?</p>
-                <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x" focusable="true">
-                    <path
-                        d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
-                    </path>
-                </svg>
-            </button>
-            <button class="faq-svg-text">
-                <p class="faq-list-text">Where can I watch?</p>
-                <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x" focusable="true">
-                    <path
-                        d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
-                    </path>
-                </svg>
-            </button>
-            <button class="faq-svg-text">
-                <p class="faq-list-text">How do I cancel?</p>
-                <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x" focusable="true">
-                    <path
-                        d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
-                    </path>
-                </svg>
-            </button>
-            <button class="faq-svg-text">
-                <p class="faq-list-text">What can I watch on Netflix?</p>
-                <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x" focusable="true">
-                    <path
-                        d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
-                    </path>
-                </svg>
-            </button>
-        </div>
-
-        <p class="toWatch-text">Ready to watch? Enter your email to create or restart your membership.</p>
-
-        <form class="subscribe-form" action="#" method="POST" class="subscribe">
-
-            <input class="emailField" type="email" name="email" placeholder="Email address">
-
-            <button class="getStarted-button">
-                <span class="getStarted-wrapper">
-                    <p class="getStarted">GET STARTED</p>
+                    <p class="getStarted">Get Started</p>
                     <svg class="getStarted-svg" viewBox="0 0 6 12">
                         <path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z">
                         </path>
                     </svg>
-                </span>
-            </button>
 
-
+                </button>
+            </span>
         </form>
 
     </section>
 
-    <section class="whole-footer">
+    <footer>
 
-        <a href="#">
-            <div class="footer-head-link">Questions? Contact us.</div>
-        </a>
+        <section class="footer-item-wrapper container">
 
-        <section class="footer-link-wrapper">
+            <p class="contact-us">Questions? <a href="#">Contact us.</a></p>
+            
+            <section class="footer-nav container-flex">
+            
+                <nav class="footer-link-wrapper container-flex">
+                    <li class="footer-link"><a href="#">FAQ</a></li>
+                    <li class="footer-link"><a href="#">Help Center</a></li>
+                    <li class="footer-link"><a href="#">Account</a></li>
+                    <li class="footer-link"><a href="#">Media Center</a></li>
+                </nav>
+            
+                <nav class="footer-link-wrapper container-flex">
+                    <li class="footer-link"><a href="#">Investors Relation</a></li>
+                    <li class="footer-link"><a href="#">Jobs</a></li>
+                    <li class="footer-link"><a href="#">Ways to Watch</a></li>
+                    <li class="footer-link"><a href="#">Terms of Use</a></li>
+                </nav>
+            
+                <nav class="footer-link-wrapper container-flex">
+                    <li class="footer-link"><a href="#">Cookie Preferences</a></li>
+                    <li class="footer-link"><a href="#">Coperate Information</a></li>
+                    <li class="footer-link"><a href="#">Media Center</a></li>
+                    <li class="footer-link"><a href="#">Speed Test</a></li>
+                </nav>
+            
+                <nav class="footer-link-wrapper container-flex">
+                    <li class="footer-link"><a href="#">Legal Notices</a></li>
+                    <li class="footer-link"><a href="#">Netflix Originals</a></li>
+                    <li class="footer-link"><a href="#">Contact Us</a></li>
+                </nav>
+            
+            </section>
 
-            <nav>
-                <ul class="footer-links">
-                    <a href="#">
-                        <li class="footer-nav-text">FAQ</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer-nav-text">Help Center</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer-nav-text">Account</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer-nav-text">Media Center</li>
-                    </a>
-                </ul>
-            </nav>
-
-            <nav>
-                <ul class="footer-links">
-                    <a href="#">
-                        <li class="footer-nav-text">Investors Relation</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer-nav-text">Job</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer-nav-text">Ways to Watch</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer-nav-text">Terms of Use</li>
-                    </a>
-                </ul>
-            </nav>
-
-            <nav>
-                <ul class="footer-links">
-                    <a href="#">
-                        <li class="footer-nav-text">Cookie Preferences</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer-nav-text">Coperate Information</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer-nav-text">Media Center</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer-nav-text">Speed Test</li>
-                    </a>
-                </ul>
-            </nav>
-
-            <nav>
-                <ul class="footer-links">
-                    <a href="#">
-                        <li class="footer-nav-text">Legal Notices</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer-nav-text">Netflix Originals</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer-nav-text">Contact Us</li>
-                    </a>
-                </ul>
-            </nav>
+            <p class="countryID">Netflix Nigeria</p>
 
         </section>
 
-        <p class="nfNG">Netflix Nigeria</p>
-
-    </section>
-
+    </footer>
 </body>
 
 </html>
